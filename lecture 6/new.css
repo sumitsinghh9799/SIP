@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    gap:120px;
+}
+
+.slider{
+    position:relative;
+    width:400px;
+    height:600px;
+}
+
+.card{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:260px;
+    height:140px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+    opacity: 0;
+}
+
+.card1{
+    top:0;
+    opacity:0.2;
+}
+
+.card2{
+    top:90px;
+    opacity:0.5;
+}
+
+.active{
+    top:190px;
+    width:400px;
+    height:220px;
+    opacity:1;
+    z-index:10;
+}
+
+.card4{
+    top:400px;
+    opacity:0.5;
+}
+
+.card5{
+    top:500px;
+    opacity:0.1;
+}
+
+.content{
+    text-align:center;
+}
+
+.buttons{
+    margin-bottom:50px;
+}
+
+.buttons button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    margin:10px;
+    cursor:pointer;
+    font-size:20px;
+    background:#2d5cff;
+    color:white;
+}
+
+h1{
+    color:#1d4ed8;
+    font-size:44px;
+    margin-bottom:10px;
+}
+
+p{
+    color:gray;
+    letter-spacing:4px;
+}
+
+.dots{
+    margin-top:40px;
+}
+
+.dots span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#ccc;
+    display:inline-block;
+    margin:5px;
+}
+
+.active-dot{
+    background:#1d4ed8 !important;
+}
+
+.card:hover{
+    width:320px;
+    height:180px;
+    opacity:1;
+    transform:translateX(-50%) scale(1.1);
+    transform-origin:center center;
+    z-index:100;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}

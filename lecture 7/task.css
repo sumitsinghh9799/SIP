@@ -1,0 +1,211 @@
+html, body {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important; 
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #eef0f5;
+}
+
+.topbar {
+  height: 60px;
+  background: linear-gradient(90deg, #00b8c9, #7b2cff);
+}
+
+.app-body {
+  height: calc(100vh - 60px) !important;
+  overflow: hidden !important;
+}
+
+.sidebar {
+  height: 100%;
+  width: 90px;
+  z-index: 10;
+}
+
+.menu {
+  font-size: 13px;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #f3f4f6;
+  color: #7b2cff !important;
+}
+
+.side-drawer {
+  width: 320px;
+  max-width: 320px;
+  height: calc(100vh - 60px) !important; 
+  overflow-y: scroll !important; 
+  -webkit-overflow-scrolling: touch; 
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+}
+
+.btn-purple {
+  background: #8a35f5;
+  color: white;
+}
+
+.btn-purple:hover {
+  background: #7326df;
+  color: white;
+}
+
+.thumb {
+  width: 130px;
+  height: 85px;
+  background: #dff7ff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workspace {
+  height: 100%;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.toolbar {
+  width: max-content;
+}
+
+.canvas {
+  width: 650px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.shape {
+  width: 65px;
+  height: 65px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.shape:hover {
+  transform: scale(1.1); 
+  cursor: grab;
+}
+
+.circle {
+  background: #b7ff63;
+  border-radius: 50%;
+}
+
+.square {
+  background: #ffe05a;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 32.5px solid transparent;
+  border-right: 32.5px solid transparent;
+  border-bottom: 65px solid #ff741f;
+}
+
+.pentagon {
+  background: #2100b8;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.plus {
+  background: black;
+  clip-path: polygon(35% 0%, 65% 0%, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0% 65%, 0% 35%, 35% 35%);
+}
+
+.parallelogram {
+  background: #c464e8;
+  transform: skew(-18deg);
+}
+
+.parallelogram:hover {
+  transform: scale(1.1) skew(-18deg);
+}
+
+.arrow {
+  background: #8a4cff;
+  clip-path: polygon(50% 0%, 100% 50%, 72% 50%, 72% 100%, 28% 100%, 28% 50%, 0% 50%);
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background: red;
+  clip-path: polygon(
+    50% 15%,
+    61% 0,
+    80% 0,
+    100% 20%,
+    100% 45%,
+    50% 100%,
+    0 45%,
+    0 20%,
+    20% 0,
+    39% 0
+  );
+
+}
+
+.heart:hover {
+  transform: scale(1.1);
+  cursor: grab;
+}
+/* Bottom Bar */
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e1e4e8;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.bottom-left, .bottom-center, .bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottom-bar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #5a5f73;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.bottom-bar button:hover {
+    background: #f0f1f3;
+}

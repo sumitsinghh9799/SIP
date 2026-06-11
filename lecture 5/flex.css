@@ -1,0 +1,16 @@
+#flex{
+    border: 1px solid black;
+width: 100px;
+height: 100px;
+background-color: aquamarine;
+}
+
+.direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border: solid black;
+    height: 50vh;
+}

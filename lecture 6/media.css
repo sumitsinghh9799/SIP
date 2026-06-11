@@ -1,0 +1,25 @@
+@media(min-width: 768px)and (max-width:900px){
+    body{
+        background-color: aqua;
+    }
+}
+@media(min-width: 900px){
+
+    body{
+        background-color: red;
+    }
+}
+
+button:hover{
+    background-color: brown;
+    transition: background 2s;
+}
+div:hover{
+    border: black;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    transition-duration: 3s;
+    transition-property: background color;
+}
+

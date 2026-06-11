@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+box-sizing: border-box;
+}
+.main{
+    
+  text-align: center;
+  color: #003b8e;
+  
+
+}
+
+.left{
+    float: left;
+}
+
+.imagecontainer{
+position: absolute;
+top: 30%;
+left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    width: 350px;
+  
+}
+
+.imagecontainer img{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.right{
+    text-align: center;
+    color: #003b8e;
+}
+
+.arrow{
+    margin-bottom: 90px;
+    position: absolute;
+top: 40%;
+left: 61%;
+}
+.arrow button{
+    margin: 0px 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    background-color: #003b8e;
+    border: none;
+    color: white;
+  font-size: 22px;
+  box-shadow: inset 0 0 8px #003b8e;
+  cursor: pointer;
+
+}
+
+ .card{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+     width:260px;
+    height:140px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+    opacity: 0;
+ } 
+
+
+.photo1{
+    top:0;
+    opacity:0.2;
+}
+
+.photo2{
+    top:90px;
+    opacity:0.5;
+}
+
+.photo3{
+    top:190px;
+    width:400px;
+    height:220px;
+    opacity:1;
+    z-index:10;
+}
+
+.photo4{
+    top:400px;
+    opacity:0.5;
+}
+
+.photo5{
+    top:500px;
+    opacity:0.1;
+}
+
+ p {
+    
+  font-size: 24px;
+  letter-spacing: 7px;
+  color: gray;
+  position: absolute;
+top: 50%;
+left: 55%;
+}
+ h1 {
+     position: absolute;
+top: 45%;
+left: 55%;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.dot {
+    
+  margin-top: 90px;
+  position: absolute;
+top: 50%;
+left: 61%;
+}
+
+.dot span{
+  display: inline-block;
+  gap: 14px;
+  width: 16px;
+  height: 16px;
+  background: #cfd6e5;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+.dot .active {
+  background: #003b8e;
+}
+
+.card:hover{
+    width:320px;
+    height:180px;
+    opacity:1;
+    transform:translateX(-50%) scale(1.1);
+    transform-origin:center center;
+    z-index:100;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}

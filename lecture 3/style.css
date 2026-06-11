@@ -1,0 +1,32 @@
+#aaa{
+    color: antiquewhite;
+    text-align:center;
+    background-color: burlywood;
+}
+
+.boy{
+    color: rgb(1, 1, 1);
+    text-align:start;
+    background-color: rgb(227, 232, 225);
+
+}
+
+.girl{
+    color: rgb(2, 2, 1);
+    text-align:start;
+    background-color: rgb(225, 217, 224);
+
+}
+
+h2{
+    color: aliceblue;
+    text-align: unset;
+    background-color: wheat;
+    
+}
+
+span{
+    color: rgb(11, 62, 107);
+    text-align: unset;
+    background-color: rgb(10, 101, 110);
+}

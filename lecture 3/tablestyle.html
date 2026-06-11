@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+   <link rel="stylesheet" href="table.css">
+   <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+        th,td{
+            border:1px solid rgb(52, 48, 48);
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Time Table</h1>
+    <table>
+        
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td> </td>
+                <td id="a" colspan="2">4</td>
+                <td id="a" colspan="2">6</td>
+            </tr>
+        
+            <tr>
+                <td>Mon</td>
+                <td>C++</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td rowspan="5">B<br><br><br>R<br><br><br>E<br><br><br>A<br><br><br>K</td>
+                <td colspan="2">java</td>
+                <td colspan="2">C++</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td rowspan="3">Hindi</td>
+                <td colspan="2">Webdev</td>
+                <td>C++</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td rowspan="2">OS</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td colspan="2">C++</td>
+                <td colspan="3">django</td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td colspan="2">Java</td>
+                <td>English</td>
+                <td>GO</td>
+                <td colspan="2">Networks</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td colspan="3">Data Science</td>
+                <td colspan="2">C++</td>
+                <td>Go</td>
+                <td>Python</td>
+        </th>
+    </table>
+</body>
+</html>
