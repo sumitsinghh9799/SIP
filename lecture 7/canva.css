@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    zoom:.94;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    padding: 0 20px;
+
+    background: linear-gradient(
+        90deg,
+        #08c7e9,
+        #3b82f6,
+        #7c3aed
+    );
+    color: white;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.left icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+/* .icons{
+    font-size: 18px;
+    cursor: pointer;
+} */
+
+.center{
+      display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.sample{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn{
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.newicon{
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    cursor: pointer;
+}
+
+.newicon i{
+    color: white;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.present{
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.share{
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: black;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    height: cal(120vh-90px);
+}
+.leftsidebar{
+    width: 120px;
+    height: 100%;
+    background: #ffffff;
+    border-right: 1px solid#e7e7e7;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+}
+.item{
+    width: 100%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
