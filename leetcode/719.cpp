@@ -1,3 +1,6 @@
+#include <iostream>
+#include <vector>
+using namespace std;
 class Solution {
 public:
     int smallestDistancePair(vector<int>& nums, int k) {
@@ -26,9 +29,17 @@ public:
         }
         return count;
     }
+};
     int main()
     {
+    Solution obj;
+
+    vector<int> nums = {1, 3, 1};
+    int k = 1;
+
+    cout << "Answer = " << obj.smallestDistancePair(nums, k) << endl;
+
+
     return 0;
 
     }
-};

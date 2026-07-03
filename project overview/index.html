@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker Dashboard</title>
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Expense</h2>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-wallet"></i>
+                Wallet
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                Statistics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-money-bill"></i>
+                Transactions
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header>
+
+            <h1>
+                Good Morning,
+                <span>Sumit!</span>
+            </h1>
+
+            <div class="header-right">
+
+                <button>Daily</button>
+
+                <button>
+                    16 January 2025
+                </button>
+
+                <button class="export">
+                    Export
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Monthly Income</h3>
+
+                <h1 id="income">
+                    ₹0
+                </h1>
+
+                <p class="green">
+                    +12% from last month
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Monthly Expense</h3>
+
+                <h1 id="expense">
+                    ₹0
+                </h1>
+
+                <p class="green">
+                    +8% from last month
+                </p>
+
+            </div>
+
+            <div class="credit-card">
+
+                <h2>My Card</h2>
+
+                <p>Linked to primary wallet</p>
+
+                <div class="chip"></div>
+
+                <h3>
+                    5435 2735 0037 0015
+                </h3>
+
+                <h4>Sumit</h4>
+
+                <div class="limit">
+
+                    <p>Spending Limit</p>
+
+                    <h2>₹50,000</h2>
+
+                    <div class="progress">
+
+                        <div class="bar"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Chart -->
+
+        <section class="chart-section">
+
+            <div class="chart-header">
+
+                <h2>Overview</h2>
+
+                <button>Yearly</button>
+
+            </div>
+
+            <div id="chart"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

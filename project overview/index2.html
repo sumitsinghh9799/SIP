@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker 2nd</title>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Expense<span>Tracker</span></h2>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-wallet"></i>
+                Wallet
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-simple"></i>
+                Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Transactions
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header>
+
+            <div>
+
+                <h1>
+                    Good Morning,
+                    <span>Sumit 👋</span>
+                </h1>
+
+                <p>Track your daily expenses efficiently.</p>
+
+            </div>
+
+            <div class="header-buttons">
+
+                <button id="themeBtn">
+                    🌙
+                </button>
+
+                <button>
+                    July 2026
+                </button>
+
+                <button id="exportCSV">
+                    Export CSV
+                </button>
+
+            </div>
+
+        </header>
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Monthly Income</h3>
+
+                <h1 id="income">
+                    ₹0
+                </h1>
+
+                <p class="green">
+                    Income this month
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Monthly Expense</h3>
+
+                <h1 id="expense">
+                    ₹0
+                </h1>
+
+                <p class="red">
+                    Expenses this month
+                </p>
+
+            </div>
+
+            <!-- Balance -->
+
+            <div class="card">
+
+                <h3>Current Balance</h3>
+
+                <h1 id="balance">
+                    ₹0
+                </h1>
+
+                <p class="blue">
+                    Available Balance
+                </p>
+
+            </div>
+
+            <!-- Credit Card -->
+
+            <div class="credit-card">
+
+                <div class="card-top">
+
+                    <h3>My Card</h3>
+
+                    <i class="fa-brands fa-cc-mastercard"></i>
+
+                </div>
+
+                <div class="chip"></div>
+
+                <h2>
+                    5435 2735 0037 0015
+                </h2>
+
+                <div class="card-bottom">
+
+                    <div>
+
+                        <small>Card Holder</small>
+
+                        <h4>SUMIT</h4>
+
+                    </div>
+
+                    <div>
+
+                        <small>Limit</small>
+
+                        <h4>₹50,000</h4>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <small>Spending Limit</small>
+
+                <div class="progress">
+
+                    <div
+                        class="bar"
+                        id="limitBar">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="chart-section">
+
+            <div class="section-title">
+
+                <h2>Monthly Overview</h2>
+
+                <button>
+                    This Year
+                </button>
+
+            </div>
+
+            <div id="chart"></div>
+
+        </section>
+
+        <section class="transaction-form">
+
+            <h2>Add Transaction</h2>
+
+            <form id="expenseForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Transaction Name"
+                    required>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount"
+                    required>
+
+                <select id="category">
+
+                    <option>Salary</option>
+                    <option>Food</option>
+                    <option>Shopping</option>
+                    <option>Travel</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                    <option>Investment</option>
+                    <option>Health</option>
+
+                </select>
+
+                <select id="type">
+
+                    <option value="income">
+                        Income
+                    </option>
+
+                    <option value="expense">
+                        Expense
+                    </option>
+
+                </select>
+
+                <input
+                    type="date"
+                    id="date"
+                    required>
+
+                <button type="submit">
+                    Add
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="filters">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Transaction">
+
+            <select id="filter">
+
+                <option value="all">
+                    All
+                </option>
+
+                <option value="income">
+                    Income
+                </option>
+
+                <option value="expense">
+                    Expense
+                </option>
+
+            </select>
+
+        </section>
+
+        <section class="history">
+
+            <div class="section-title">
+
+                <h2>
+                    Recent Transactions
+                </h2>
+
+            </div>
+
+            <ul id="transactionList">
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+
+</html>
